@@ -1,0 +1,479 @@
+
+.container .first_part{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding: 10px 32px;
+}
+h1{
+    font-size: 36px;
+    color: rgba(9, 75, 114, 1);
+    font-family: 'Playfair Display' , Bold , sans-serif;
+}
+.first_part p{
+    font-family: 'Plus Jakarta Sans', Medium, sans-serif;
+    color: rgba(79, 79, 79, 1);
+}
+.service_section{
+    background-color: rgba(242, 247, 255, 1);
+    padding: 20px 0px;
+}
+.consulting{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 43px;
+    align-items: center;
+}
+.cartes_service{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.consulting p{
+    font-family: 'Poppins', 'Regular', sans-serif;
+    color: rgba(151, 151, 151, 1);
+}
+.cartes_service .services{
+    padding: 10px 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.services p{
+    color: rgba(151, 151, 151, 1);
+}
+.services .service_box{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 1px 20px 0px #00000021;
+    padding: 10px 20px;
+    font-family: 'Playfair Display', 'Regular', sans-serif;
+} 
+.Achievement{
+    background-image: url(../images/achievement1.svg); 
+    color: white;
+}
+.achievement_text{
+    padding: 10px 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.achievement_chiffres{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.achievement_chiffres strong{
+    padding: 0px 64px;
+}
+.Testimonials{
+    background-color: rgba(242, 247, 255, 1);
+    padding: 20px 30px;
+}
+.Testimonials h2{
+    font-family: 'Playfair Display', Bold, sans-serif;
+    font-size: 25px;
+    padding: 29px 62px;
+}
+.client_testimonial{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.testimonial .opinion{
+    background-color: white;
+    padding: 10px 24px;
+    border-radius: 15px;
+    box-shadow: 0px 1px 20px 0px #00000021;
+}
+.opinion p{
+    font-family: 'Poppins', 'Regular' , sans-serif;
+    color: rgba(151, 151, 151, 1);
+}
+.triangle{
+    clip-path: polygon(100% 0, 0 0, 50% 32%);
+    height: 34px;
+    margin: 0 auto;
+    background-color: white;
+     width: 26px;
+}
+.testimonial .client_identity{
+    display: flex;
+    padding: 22px;
+    gap: 5px;
+}
+.questionning{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding: 10px 26px;
+}
+.questionning p {
+    font-family: 'Poppins', 'Regular', sans-serif;
+    color: rgba(151, 151, 151, 1);
+}
+.questionning h2{
+    font-family: 'Playfair Display', Bold , sans-serif;
+}
+.footer_section .firstPart{
+    background-color: rgba(9, 75, 114, 1);
+}
+.firstPart .logo{
+    padding: 10px 60px;
+}
+.footer_section .lists{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.firstPart .lists ul{
+    list-style-type: none;
+}
+.firstPart .lists h4{
+    padding-left: 40px;
+}
+.firstPart .lists ul li a{
+    text-decoration: none;
+    color: white;
+}
+.footer_section .secondPart{
+    background-color: rgba(0, 77, 123, 1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+}
+.secondPart .social_media{
+    padding-top: 12px;
+}
+
+@media  (max-width: 767px) {
+    .container .second_part{
+        display: none;
+    }
+    button{
+        background-color: rgba(9, 75, 114, 1);
+        color: white;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        padding: 20px 55px;
+        font-family: 'Poppins','Regular', sans-serif;
+    }
+    .about_us{
+        padding: 47px;
+    }
+    .about_us .deuxiemme_partie img{
+        padding: 25px 2px;
+        max-width: 100%;
+        height: auto;
+    }
+    .service{
+        display: flex;
+        flex-direction: column;
+        padding: 27px;
+    }
+    .service .premier_service img{
+        max-width: 100%;
+        height: auto;
+    }
+    .contact_section{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 30px;
+        gap: 20px;
+    }
+    .contact_section h2{
+        font-family: Inter, Bold,sans-serif;
+        font-size: 31px;
+    }
+    .contact_section input{
+        border: none;
+        background-color: rgba(217, 217, 217, 1);
+        width: 100%;
+        padding: 15px 3px;
+    }
+    .contact_section .message_case input{
+        padding-bottom: 41px;
+        padding-top: 33px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        display: flex;
+    }
+    .container .first_part{
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        padding: 10px 123px;
+    }
+    .container .first_part img{
+        width: 40%;
+    }
+    .container .second_part .first_img{
+        display: none;
+    }
+    .container .second_part .second_img img {
+        max-width: 100%;
+        height: auto;
+    }
+    .container .second_part .carte {
+        position: absolute;
+        background-color: white;
+        border: none;
+        border-radius: 20px;
+        top: 71%;
+        right: 7%;
+        padding: 8px 20px;
+        box-shadow: 0px 6px 20px 0px #0000003d;
+    }
+
+    .cartes_service .services{
+        padding: 10px 45px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .achievement_chiffres{
+        display: flex;
+        flex-direction: row;
+        padding: 10px 105px;
+    }
+    .achievement_chiffres hr{
+        height: 80px;
+    }
+    .client_testimonial{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .Testimonials h2{
+        font-family: 'Playfair Display', Bold, sans-serif;
+        font-size: 25px;
+        padding: 29px 312px;
+    }
+    .questionning{
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        padding: 46px 26px;
+    }
+    .footer_section .lists{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    button{
+        background-color: rgba(9, 75, 114, 1);
+        color: white;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        padding: 20px;
+        font-family: 'Poppins','Regular', sans-serif;
+        width: 40%;
+    }
+    .about_us{
+        display: flex;
+        gap: 45px;
+        font-size: 13px;
+        padding: 0px 40px;
+        flex-direction: row;
+    }
+    .about_us .premiere_partie{
+        width: 52%;
+    }
+    .about_us .deuxiemme_partie img{
+        width: 78%;
+    }
+    .service{
+        display: flex;
+        padding: 10px 54px;
+    }
+    .service .premier_service img{
+        width: 85%;
+    }
+    .service .deuxieme_service{
+        width: 50%;
+    }
+    .contact_section{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 30px;
+        gap: 20px;
+    }
+    .contact_section h2{
+        font-family: Inter, Bold,sans-serif;
+        font-size: 31px;
+    }
+    .contact_section input{
+        border: none;
+        background-color: rgba(217, 217, 217, 1);
+        width: 100%;
+        padding: 15px 3px;
+    }
+    .contact_section .message_case input{
+        padding-bottom: 41px;
+        padding-top: 33px;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1440px){
+    .container {
+        display: flex;
+        font-size: 24px;
+    }
+    .container .first_part{
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        padding: 10px 123px;
+    }
+    .container .first_part img{
+        width: 40%;
+    }
+    .container .second_part{
+        position: relative;
+    }
+    /* .container .second_part .first_img img{
+        position: absolute;
+        top: 8%;
+        left: 19%;
+    } */
+    .container .second_part .second_img img {
+        position: absolute;
+        top: 8%;
+        left: 19%;
+    }
+    .container .second_part .carte {
+        position: absolute;
+        background-color: white;
+        border: none;
+        border-radius: 20px;
+        top: 92%;
+        right: 35%;
+        padding: 8px 20px;
+        box-shadow: 0px 6px 20px 0px #0000003d;
+    }
+    .service_section{
+        background-color: rgba(242, 247, 255, 1);
+        padding: 20px 107px;
+        font-size: 16px;
+    }
+    .cartes_service .services{
+        padding: 10px 45px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .achievement_chiffres{
+        display: flex;
+        flex-direction: row;
+        padding: 10px 226px;
+        font-size: 30px;
+    }
+    .achievement_chiffres hr{
+        height: 80px;
+    }
+    .client_testimonial{
+        display: flex;
+        flex-direction: row;
+        gap: 70px;
+        justify-content: space-around;
+    }
+    .testimonial{
+        width: 40%;
+    }
+    .Testimonials{
+        background-color: rgba(242, 247, 255, 1);
+        padding: 20px 30px;
+        font-size: 16px;
+    }
+    .Testimonials h2{
+        font-family: 'Playfair Display', 'Bold', sans-serif;
+        font-size: 51px;
+        padding: 29px 312px;
+    }
+    .footer_section .lists{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .questionning{
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        padding: 10px 241px;
+        font-size: 20px;
+    }
+    .footer_section .firstPart{
+        background-color: rgb(9, 75, 114);
+        font-size: 28px;
+    }
+    button{
+        background-color: rgba(9, 75, 114, 1);
+        color: white;
+        font-size: 10px;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        padding: 20px;
+        font-family: 'Poppins','Regular', sans-serif;
+        width: 40%;
+    }
+    .about_us{
+        display: flex;
+        gap: 89px;
+        padding: 10px 120px;
+    }
+    .about_us .premiere_partie{
+        width: 52%;
+         font-size: 25px;
+    }
+    .about_us .deuxiemme_partie img{
+        width: 91%;
+    }
+    .service{
+        display: flex;
+        gap: 60px;
+        padding: 66px 127px;
+    }
+    .service .premier_service img{
+        width: 90%;
+    }
+    .service .deuxieme_service{
+        width: 40%;
+        font-size: 22px;
+        padding-top: 55px;
+    }
+    .contact_section{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 30px;
+        gap: 20px;
+    }
+    .contact_section h2{
+        font-family: Inter, Bold,sans-serif;
+        font-size: 31px;
+    }
+    .contact_section input{
+        border: none;
+        background-color: rgba(217, 217, 217, 1);
+        width: 100%;
+        padding: 15px 3px;
+    }
+    .contact_section button{
+        background-color: rgba(9, 75, 114, 1);
+        color:white;
+        padding: 14px;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        margin-right: 933px;  
+    }
+    .contact_section .message_case input{
+        padding-bottom: 41px;
+        padding-top: 33px;
+    }
+}
