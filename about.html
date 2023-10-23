@@ -16,11 +16,19 @@
 
 </head>
 <body>
-   <header>
-    <div class="logo">
-        <img src="images/Logo.svg" alt="logo de l'entreprise">
-    </div>
-   </header>
+    <nav id="nav" class="active">
+        <div class="logo">
+            <img src="images/Logo.svg" alt="logo de l'entreprise">
+        </div>
+        <ul>
+            <li><a href="contact.html">CONTACT</a> </li>
+            <li><a href="#testimonoals">TESTIMONIALS</a> </li>
+            <li><a href="about.html">ABOUT</a> </li>
+            <li><a href="service.html">SERVICE</a> </li>
+            
+        </ul>
+        <div id="icons"></div>
+    </nav>
    <!--start about section-->
    <section class="about_us">
     <div class="premiere_partie">
@@ -32,9 +40,38 @@
         <img src="images/about-img.svg" alt="image du materiel" >
     </div>
    </section>
-   <section class="FAQ">
-    
+   <!--start FAQ section-->
+   <section class="FAQ_section" >
+        <h2 class="title">FAQ</h2>
+    <div class="faq">
+        <div class="question">
+            <h3>A propos de l entreprise ?</h3>
+            <svg width="15" height="10" viewBox="0 0 42 25">
+                <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap=""
+            </svg>
+        </div>
+        <div class="answer">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea perferendis cumque natus laboriosam enim reprehenderit corporis. Accusamus neque fuga eum dolore, a error omnis repellendus et soluta inventore, sint rerum.</p>
+        </div>
+    </div>
+    <div class="faq">
+        <div class="question">
+            <h3>A propos des collaborateurs ?</h3>
+        </div>
+        <div class="answer">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni in veniam soluta velit? Praesentium quasi sequi minus neque atque voluptatem sed fuga. Eum esse cupiditate fugiat quis necessitatibus quisquam aut.</p>
+        </div>
+    </div>
+    <div class="faq">
+        <div class="question">
+            <h3>A propos du poste ?</h3>
+        </div>
+        <div class="answer">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias nemo libero quo molestiae officia, nostrum corporis sit, illum sequi, nobis at. Eveniet modi labore, quaerat sunt dignissimos ratione incidunt. Quam.</p>
+        </div>
+    </div>
    </section>
+   <!--end FAQ section-->
    <!--end about section-->
    <!--start footer section-->
    <footer class="footer_section" >
@@ -89,6 +126,8 @@
          </div>
     </div>  
  </footer>
+ 
 <!--end footer section-->
+<script src="../index.js"></script>
 </body>
 </html>

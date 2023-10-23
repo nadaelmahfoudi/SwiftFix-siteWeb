@@ -15,23 +15,23 @@
     <link rel="stylesheet" href="styles/normalize.css">
 </head>
 <body>
-   <header class="navbar">
+   <nav id="nav" class="active">
     <div class="logo">
         <img src="images/Logo.svg" alt="logo de l'entreprise">
     </div>
-    <!-- <ul class="navBar_menu">
-        <li class="navbar_item" ><a class="nav_link" href="contact.html">CONTACT</a> </li>
-        <li class="navbar_item" ><a class="nav_link" href="#testimonoals">TESTIMONIALS</a> </li>
-        <li class="navbar_item"><a class="nav_link" href="about.html">ABOUT</a> </li>
-        <li class="navbar_item" ><a class="nav_link"href="service.html">SERVICE</a> </li>
+    <ul>
+        <li><a href="contact.html">CONTACT</a> </li>
+        <li><a href="#testimonoals">TESTIMONIALS</a> </li>
+        <li><a href="about.html">ABOUT</a> </li>
+        <li><ahref="service.html">SERVICE</a> </li>
         
     </ul>
-    <div class="humburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-    </div> -->
-   </header> 
+    <div id="icons"></div>
+    <div class="search-container">
+        <input type="text" placeholder="Search..." id="search-input">
+        <button class="button_search" onclick="toggleSearch()"><img src="images/search_icone.jpg" alt="Search Icon"></button>
+    </div>
+</nav> 
    <section class="container">
     <div class="first_part">
         <h1>Repair and Maintenance Service</h1>
@@ -53,6 +53,7 @@
         </div>
     </div> 
    </section>
+   <!--start service section-->
    <section class="service_section">
     <div class="consulting">
         <h2>Why do we help with consulting?</h2>
@@ -193,5 +194,6 @@
     </div>  
  </footer>
 <!--end footer section-->
+<script src="../index.js"></script>
 </body>
 </html>

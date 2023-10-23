@@ -1,4 +1,40 @@
-
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: blue;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 112px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+#icons{
+    cursor: pointer;
+    display: none;
+}
+#search-input {
+    display: none;
+} 
+.button_search{
+    background-color: white;
+    width: 125px;
+}
+.button_search img{
+    border-style: none;
+    width: 100%;
+    height: auto;
+}
 .container .first_part{
     display: flex;
     flex-direction: column;
@@ -147,8 +183,55 @@ h1{
 .secondPart .social_media{
     padding-top: 12px;
 }
-
+.FAQ_section{
+    background-color: rgba(242, 247, 255, 1);
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: column;
+}
+.faq{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.title{
+    font-size: 30px;
+}
 @media  (max-width: 767px) {
+    #icons{
+        display: block;
+    }
+    #icons:before{
+        content: "\2630";
+    }
+    .active #icons:before{
+        content: "\2715";
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 58px;
+    }
+    nav ul{
+        position: fixed;
+        left: -110%;
+        top: 5%;
+        flex-direction: column;
+        background-color: rgb(222, 215, 215);
+        width: 100%;
+        text-align: center;
+    }
+    nav li{
+        padding: 4px 0px;
+    }
+    nav li:hover{
+        background-color:rgb(217, 200, 200);
+    }
+    nav.active ul{
+        left: 0;
+    }
     .container .second_part{
         display: none;
     }
@@ -200,6 +283,19 @@ h1{
     }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
+    .button_search{
+        background-color: white;
+        width: 78px;
+    }
+    .search_container{
+        padding: 10px 36px;
+    }
+    nav ul{
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+        gap: 20px;
+    }
     .container {
         display: flex;
     }
@@ -320,6 +416,10 @@ h1{
     }
 }
 @media (min-width: 1025px) and (max-width: 1440px){
+    .button_search{
+        background-color: white;
+        width: 78px;
+    }
     .container {
         display: flex;
         font-size: 24px;
