@@ -9,13 +9,19 @@
 icons.addEventListener("click", () => {
     nav.classList.toggle("active");
 })
+
 function toggleSearch() {
     var input = document.getElementById("search-input");
     if (input.style.display === "none") {
         input.style.display = "block";
     } else {
         input.style.display = "none";
-    }
-}
+    }}
 
-  
+const faqs = document.querySelectorAll(".faq");
+
+faqs.forEach(faq => {
+    faq.addEventListener("click", () => {
+        faq.classList.toggle("active");
+    })
+});
