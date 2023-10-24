@@ -11,13 +11,13 @@ a:hover{
 nav{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 10px 112px;
+    padding: 10px 23px;
 }
 nav ul{
     display: flex;
     justify-content: space-between;
-    width: 60%;
+    width: 68%;
+    gap: 20px;
 }
 #icons{
     cursor: pointer;
@@ -28,7 +28,8 @@ nav ul{
 } 
 .button_search{
     background-color: white;
-    width: 125px;
+    width: 57px;
+    padding-top: 0px;
 }
 .button_search img{
     border-style: none;
@@ -162,6 +163,7 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: white;
 }
 .firstPart .lists ul{
     list-style-type: none;
@@ -214,6 +216,13 @@ h1{
 .faq.active .answer{
     max-height: 200px;
 }
+.error {
+    color: red;
+  }
+
+  .success {
+    color: green;
+  }
 @media  (max-width: 767px) {
     #icons{
         display: block;
@@ -224,6 +233,16 @@ h1{
     .active #icons:before{
         content: "\2715";
     }
+    .button_search{
+        display: block;
+        margin-left: 104px;
+    }
+    .button_search img{
+        display: block;
+        width: 16px;
+        margin-top: 3px;
+        margin-bottom: -14px;
+    }
     nav{
         display: flex;
         justify-content: space-between;
@@ -232,7 +251,7 @@ h1{
     }
     nav ul{
         position: fixed;
-        left: -110%;
+        left: -130%;
         top: 5%;
         flex-direction: column;
         background-color: rgb(222, 215, 215);
@@ -259,6 +278,14 @@ h1{
         cursor: pointer;
         padding: 20px 55px;
         font-family: 'Poppins','Regular', sans-serif;
+    }
+    .footer_section .secondPart{
+        background-color: rgba(0, 77, 123, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        color: white;
+        align-items: center;
     }
     .about_us{
         padding: 47px;
@@ -301,7 +328,8 @@ h1{
 @media (min-width: 768px) and (max-width: 1024px) {
     .button_search{
         background-color: white;
-        width: 78px;
+        width: 57px;
+        padding-top: 0px;
     }
     .search_container{
         padding: 10px 36px;

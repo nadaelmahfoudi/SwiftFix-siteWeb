@@ -25,3 +25,36 @@ faqs.forEach(faq => {
         faq.classList.toggle("active");
     })
 });
+
+function validateForm() {
+    const name = document.getElementById('name').value;
+    const phone = document.getElementById('phone_number').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    if (name === '') {
+      document.getElementById('nameError').innerText = 'Name cannot be blank';
+    } else {
+      document.getElementById('nameError').innerText = '';
+    }
+
+    const phoneRegex = /\+212\-+[6|7]+\d{8}/g;
+    if (!phoneRegex.test(phone)) {
+      document.getElementById('phoneError').innerText = 'Enter a valid phone number';
+    } else {
+      document.getElementById('phoneError').innerText = '';
+    }
+
+    const emailRegex = /^[a-zA-Z0-9._-]+@gmail+\.[a-zA-Z]{2,4}$/;
+    if (!emailRegex.test(email)) {
+      document.getElementById('emailError').innerText = 'Enter a valid email';
+    } else {
+      document.getElementById('emailError').innerText = '';
+    }
+
+    if (message === '') {
+      document.getElementById('messageError').innerText = 'Message cannot be blank';
+    } else {
+      document.getElementById('messageError').innerText = '';
+    }
+  }
