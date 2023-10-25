@@ -32,8 +32,10 @@ function validateForm() {
     const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
 
-    if (name === '') {
-      document.getElementById('nameError').innerText = 'Name cannot be blank';
+    const nameRegex = /^{a-zA-Z}/g;
+
+    if (!nameRegex.test(name)) {
+      document.getElementById('nameError').innerText = 'Enter a valid name';
     } else {
       document.getElementById('nameError').innerText = '';
     }
@@ -52,9 +54,17 @@ function validateForm() {
       document.getElementById('emailError').innerText = '';
     }
 
-    if (message === '') {
-      document.getElementById('messageError').innerText = 'Message cannot be blank';
-    } else {
+     const messageRegex = /^[a-zA-Z0-9]{10,}$/;
+
+     if(!messageRegex.test('message')){
+      document.getElementById('messageError').innerText = 'Enter a valid message';
+     }else{
       document.getElementById('messageError').innerText = '';
-    }
+     }
   }
+
+
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
