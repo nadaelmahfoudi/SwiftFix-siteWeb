@@ -10,6 +10,8 @@ icons.addEventListener("click", () => {
     nav.classList.toggle("active");
 })
 
+// search icone
+
 function toggleSearch() {
     var input = document.getElementById("search-input");
     if (input.style.display === "none") {
@@ -18,6 +20,8 @@ function toggleSearch() {
         input.style.display = "none";
     }}
 
+//FAQ section
+
 const faqs = document.querySelectorAll(".faq");
 
 faqs.forEach(faq => {
@@ -25,6 +29,9 @@ faqs.forEach(faq => {
         faq.classList.toggle("active");
     })
 });
+
+
+// form validation
 
 function validateForm() {
     const name = document.getElementById('name').value;
@@ -63,6 +70,7 @@ function validateForm() {
      }
   }
 
+//dropdown list
 
 
 function myFunction() {
@@ -85,6 +93,8 @@ var slideIndex = 0;
       x[slideIndex-1].style.display = "block";  
       setTimeout(carousel, 2000); 
   }
+
+
 //ouvrir le Modal
   function openModal(modalId) {
     document.getElementById(modalId).style.display = "block";
