@@ -25,7 +25,9 @@
         <li><a href="about.html">ABOUT</a> </li>
         <li><a href="service.html">SERVICE</a> </li>
         <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+            <button onclick="myFunction()" class="dropbtn"><svg width="15" height="10" viewBox="0 0 42 25">
+                <path d="M3 3L21 21L39 3"  stroke-width="7" stroke-linecap="round"/>
+            </svg></button>
             <div id="myDropdown" class="dropdown-content">
               <a href="#">Equipment</a>
               <a href="#">Facility</a>
@@ -69,30 +71,59 @@
     </div>
     <div class="cartes_service">
         <div class="services">
-            
             <div class="service_box">
                 <img src="images/logo_maintenance.svg" alt="">
                 <h3 class="title_size">Equipment Maintenance</h3>
                 <p class="paragraph_size">Our equipment maintenance team ensures that your machinery operates at peak efficiency</p>
+                <button onclick="openModal('equipmentModal')">Read More</button>
             </div>
             <div class="service_box">
                 <img src="images/Bag.svg" alt="">
                 <h3 class="title_size">Facility Maintenance</h3>
                 <p class="paragraph_size">We provide comprehensive facility maintenance services to keep your premises safe and functional</p>
+                <button onclick="openModal('facilityModal')">Read More</button>
             </div>
         </div>
         <div class="services">
             <div class="service_box">
                 <img src="images/Rocket.svg" alt="">
                 <h3 class="title_size">Information and Technology</h3>
-                <p class="paragraph_size">Our information and technology experts offer cutting-edge solutions for your IT needs</p>
+                <p class="paragraph_size">Our information and technology experts offer cutting-edge solutions for your IT needs</p>*
+                <button onclick="openModal('information')">Read More</button>
             </div>
             <div class="service_box">
                 <img src="images/services.svg" alt="">
                 <h3 class="title_size">Other Services Of Maintenance</h3>
                 <p class="paragraph_size">In addition to maintenance, we offer a range of other services to support your business</p>
+                <button onclick="openModal('otherServices')">Read More</button>
             </div>
     </div>
+    <div id="equipmentModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('equipmentModal')">&times;</span>
+            <p>Modal content for Equipment Maintenance</p>
+        </div>
+    </div>
+    <div id="facilityModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('facilityModal')">&times;</span>
+          <p>Modal content for Facility Maintenance.</p>
+        </div>
+      </div>
+      
+      <div id="information" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('information')">&times;</span>
+          <p>Modal content for Information and Technology.</p>
+        </div>
+      </div>
+      
+      <div id="otherServices" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('otherServices')">&times;</span>
+          <p>Modal content for Other Services of Maintenance.</p>
+        </div>
+      </div>
    </section>
    <section class="Achievement">
     <div class="achievement_text">
